@@ -10,7 +10,7 @@ api = Api(app)
 
 metrics = RESTfulPrometheusMetrics(app, api)
 
-metrics.info('app_info', 'Application info', version='1.0', app_name='devops-bookstore-api')
+metrics.info('app_info', 'Application info', version='1.1', app_name='devops-bookstore-api')
 
 # A List of Dicts to store all of the books
 books = [{
@@ -30,6 +30,12 @@ books = [{
         "bookImage": "https://itbook.store/img/books/9781491929124.png",
         "bookDescription": "The overwhelming majority of a software system's lifespan is spent in use, not in design or implementation. So, why does conventional wisdom insist that software engineers focus primarily on the design and development of large-scale computing systems?",
         "bookAuthors" : "Betsy Beyer, Chris Jones, Jennifer Petoff"
+    },
+    {
+        "bookTitle": "Database Reliability Engineering" ,
+        "bookImage": "https://itbook.store/books/9781491925942.png",
+        "bookDescription": "The infrastructure-as-code revolution in IT is also affecting database administration. With this practical book, developers, system administrators, and junior to mid-level DBAs will learn how the modern practice of site reliability engineering applies to the craft of database architecture and operations. Authors Laine Campbell and Charity Majors provide a framework for professionals looking to join the ranks of today's database reliability engineers (DBRE).",
+        "bookAuthors" : "Laine Campbell, Charity Major"
     },
 ]
 
